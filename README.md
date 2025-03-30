@@ -3,8 +3,8 @@
 
 - [] ej1 (nose)
 - [] ej2 (nose)
-- [] ej3 (Terminado sin probar)
-- [] ej4 (en processo)
+- [x] ej3 (Terminado sin probar)
+- [x] ej4 (Terminado sin probar)
 - [] ej5 (sin arrancar)
 
 

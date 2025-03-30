@@ -1,9 +1,10 @@
 import java.util.ArrayList;
 
-public class Lote {
+public abstract class Lote {
     private int numero;
     private ArrayList<Mineral> minerales;
     private ArrayList<Cereal> historia;
+    private ArrayList<Cereal> posibles;
 
     public Lote() {
     }
@@ -38,4 +39,29 @@ public class Lote {
         this.historia = historia;
     }
 
+    public ArrayList<Cereal> getPosibles() {
+        return posibles;
+    }
+
+    public void setPosibles(ArrayList<Cereal> posibles) {
+        this.posibles = posibles;
+    }
+
+    public void setAutoPosibles(ArrayList<Cereal> cereales) {
+        ArrayList<Cereal> posibles = new ArrayList<>();
+        for (Cereal cereal : cereales) {
+            if (minerales.containsAll(cereal.getMineralesNecesarios())) {
+                posibles.add(cereal);
+            }
+        }
+    }
+
+    public void displayPosibles() {
+        System.out.println(numero);
+        System.out.println("-".repeat(String.valueOf(numero).length()));
+
+        // maldito lambda function
+        // arraylist.forEach( (var) -> function que realizar)
+        posibles.forEach(cer -> System.out.println(cer.getNombre()));
+    }
 }
