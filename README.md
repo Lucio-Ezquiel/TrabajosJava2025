@@ -5,6 +5,6 @@
 - [ ] ej2 (nose)
 - [x] ej3 (Terminado sin probar)
 - [x] ej4 (Terminado sin probar)
-- [ ] ej5 (Casi terminado)
+- [x] ej5 (Vamos a decir que esta terminado)
 
 

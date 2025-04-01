@@ -22,5 +22,10 @@ public class Main {
 
         mx.restaurantes.get(0).addPlato(new Plato("Tacos", 12.50));
 
+        Persona p1 = new Persona("Miguel");
+        Resenia r1 = new Resenia(5, mx.restaurantes.get(0).getPlatos().get(0));
+        ArrayList<Resenia> rs = new ArrayList<>();
+        rs.add(r1);
+        p1.setResenias(rs);
     }
 }
