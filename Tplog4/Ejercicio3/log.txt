@@ -1,0 +1,14 @@
+2025-05-22 12:32:51.181 [main] INFO  org.example.Main - Este es un mensaje INFO.
+2025-05-22 12:32:51.183 [main] WARN  org.example.Main - Este es un mensaje de ADVERTENCIA.
+2025-05-22 12:32:51.183 [main] ERROR org.example.Main - Este es un mensaje de ERROR.
+2025-05-22 12:32:51.183 [main] FATAL org.example.Main - Este es un mensaje FATAL.
+2025-05-22 12:32:51.183 [main] ERROR org.example.Main - Ocurrió un error durante la división:
+java.lang.ArithmeticException: / by zero
+	at org.example.Main.main(Main.java:19) [main/:?]
+2025-05-22 12:33:49.933 [main] INFO  org.example.Main - Este es un mensaje INFO.
+2025-05-22 12:33:50.025 [main] WARN  org.example.Main - Este es un mensaje de ADVERTENCIA.
+2025-05-22 12:33:50.028 [main] ERROR org.example.Main - Este es un mensaje de ERROR.
+2025-05-22 12:33:50.029 [main] FATAL org.example.Main - Este es un mensaje FATAL.
+2025-05-22 12:33:50.031 [main] ERROR org.example.Main - Ocurrió un error durante la división:
+java.lang.ArithmeticException: / by zero
+	at org.example.Main.main(Main.java:19) [main/:?]

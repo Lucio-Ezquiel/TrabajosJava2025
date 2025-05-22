@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration status="WARN">
+    <Appenders>
+        <Console name="ConsoleAppender1" target="SYSTEM_OUT">
+            <PatternLayout pattern="%d{yyyy-MM-dd HH:mm:ss.SSS} [%t] %-5level %logger{36} - %msg%n"/>
+        </Console>
+
+        <Console name="ConsoleAppender2" target="SYSTEM_OUT">
+            <PatternLayout pattern="%d{yyyy-MM-dd HH:mm:ss.SSS} [%t] %-5level %logger{36} %L %M - %msg%n"/>
+        </Console>
+
+        <Console name="ConsoleAppender3" target="SYSTEM_OUT">
+            <PatternLayout pattern="%highlight{%d{HH:mm:ss.SSS} [%t] %-5level %c{1.} - %msg%n}{FATAL=red, ERROR=red, WARN=yellow, INFO=green, DEBUG=blue, TRACE=white}"/>
+        </Console>
+
+        <Console name="ConsoleAppender4" target="SYSTEM_OUT">
+            <PatternLayout pattern="%level: %msg%n"/>
+        </Console>
+
+        <File name="FileAppender" fileName="logs/app.log">
+            <PatternLayout pattern="%d{yyyy-MM-dd HH:mm:ss.SSS} %-5level %logger{36} - %msg%n"/>
+        </File>
+    </Appenders>
+
+    <Loggers>
+        <Root level="debug">
+            <AppenderRef ref="ConsoleAppender1"/>
+            <AppenderRef ref="ConsoleAppender2"/>
+            <AppenderRef ref="ConsoleAppender3"/>
+            <AppenderRef ref="ConsoleAppender4"/>
+            <AppenderRef ref="FileAppender"/> </Root>
+    </Loggers>
+</Configuration>

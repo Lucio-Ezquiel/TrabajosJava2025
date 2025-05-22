@@ -1,0 +1,25 @@
+2025-05-22 12:09:55.681 DEBUG org.example.Main - This is a DEBUG message.
+2025-05-22 12:09:55.684 INFO  org.example.Main - This is an INFO message.
+2025-05-22 12:09:55.684 WARN  org.example.Main - This is a WARN message.
+2025-05-22 12:09:55.684 ERROR org.example.Main - This is an ERROR message.
+2025-05-22 12:09:55.685 FATAL org.example.Main - This is a FATAL message.
+2025-05-22 12:09:55.685 INFO  org.example.Main - This is an INFO message from another method.
+2025-05-22 12:09:55.685 DEBUG org.example.Main - Debugging in another method.
+2025-05-22 12:09:55.692 ERROR org.example.Main - An error occurred during division: / by zero
+java.lang.ArithmeticException: / by zero
+	at org.example.Main.main(Main.java:20) [main/:?]
+2025-05-22 12:12:11.632 DEBUG org.example.Main - This is a DEBUG message.
+2025-05-22 12:12:11.635 INFO  org.example.Main - This is an INFO message.
+2025-05-22 12:12:11.635 WARN  org.example.Main - This is a WARN message.
+2025-05-22 12:12:11.635 ERROR org.example.Main - This is an ERROR message.
+2025-05-22 12:12:11.636 FATAL org.example.Main - This is a FATAL message.
+2025-05-22 12:12:11.636 INFO  org.example.Main - This is an INFO message from another method.
+2025-05-22 12:12:11.636 DEBUG org.example.Main - Debugging in another method.
+2025-05-22 12:12:11.642 ERROR org.example.Main - An error occurred during division: / by zero
+java.lang.ArithmeticException: / by zero
+	at org.example.Main.main(Main.java:20) [main/:?]
+2025-05-22 12:12:58.220 DEBUG org.example.Main - This is a DEBUG message.
+2025-05-22 12:12:58.223 INFO  org.example.Main - This is an INFO message.
+2025-05-22 12:12:58.224 WARN  org.example.Main - This is a WARN message.
+2025-05-22 12:12:58.224 ERROR org.example.Main - This is an ERROR message.
+2025-05-22 12:12:58.224 FATAL org.example.Main - This is a FATAL message.

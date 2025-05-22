@@ -1,0 +1,30 @@
+plugins {
+    id 'java'
+    id 'application'
+}
+
+group 'com.example'
+version '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+}
+
+application {
+    mainClass = 'org.example.Main'
+}
+
+jar {
+    manifest {
+        attributes 'Main-Class': 'milog.Main'
+    }
+    archiveBaseName = 'milog'
+}
+
+task runMilog(type: JavaExec) {
+    classpath sourceSets.main.runtimeClasspath
+    main = application.mainClass
+}
