@@ -1,0 +1,4 @@
+22:11:02.495 [main] WARN  org.milog.Milog - New file log msg
+22:11:15.203 [main] WARN  org.milog.Milog - New file log msg
+09:49:34.774 [main] WARN  org.milog.Milog - New file log msg
+09:49:34.775 [main] FATAL org.milog.Milog - Http funca con python flask
