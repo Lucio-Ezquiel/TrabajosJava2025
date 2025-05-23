@@ -1,16 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Configuration status="INFO">
+    <Include location="log4j2-html.xml" />
     <Appenders>
         <Console name="console" target="SYSTEM_OUT">
-            <PatternLayout pattern="%d{yyyy-MM-dd HH:mm:ss.SSS} [%t] %-5level %logger{36} - %msg%n" />
+            <PatternLayout pattern="%d{yyyy-MM-dd} [%t] %-5level %logger{36} - %msg%n" />
         </Console>
         <File name="file" fileName="javalogs/app.txt" append="true">
             <PatternLayout pattern="%d{HH:mm:ss.SSS} [%t] %-5level %logger{36} - %msg%n"/>
         </File>
         <Http name="http" url="http://localhost:8080/log">
-            <PatternLayout pattern="%d{HH:mm:ss.SSS} [%t] %-5level %logger{36} - %msg%n"/>
+            <PatternLayout pattern="%d{HH:mm:ss.SSS} [%t] %-5level %logger{36} - %M:%L - %msg%n"/>
             <Property name="Content-Type" value="application/json"/>
         </Http>
+        <RollingFile name="rollingFile" fileName="javalogs/app.log" filePattern="javalogs/app-%d{yyyy-MM-dd}-%i.log.gz">
+            <PatternLayout pattern="%highlight{%d{yyyy-MM-dd HH:mm:ss}} %-5p %c{1} - %m%n" />
+            <Policies>
+                <TimeBasedTriggeringPolicy interval="2" modulate="true" />
+                <SizeBasedTriggeringPolicy size="10MB" />
+                <CronTriggeringPolicy schedule="*/10 * * * *"/>
+            </Policies>
+        </RollingFile>
     </Appenders>
 
     <CustomLevels>
@@ -23,8 +32,10 @@
         </Logger>
         <Root level="DEBUG">
             <AppenderRef ref="console" />
+            <AppenderRef ref="rollingFile" level="fatal"/>
             <AppenderRef ref="file" level="warn"/>
-            <AppenderRef ref="http" level="fatal"/>
+            <!-- <AppenderRef ref="http" level="fatal"/> -->
+            <!-- <AppenderRef ref="HTMLConsole" /> -->
         </Root>
     </Loggers>
 </Configuration>

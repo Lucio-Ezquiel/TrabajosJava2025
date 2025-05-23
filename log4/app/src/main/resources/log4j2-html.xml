@@ -1,0 +1,8 @@
+<Configuration status="WARN">
+    <Appenders>
+        <Console name="HTMLConsole" target="SYSTEM_OUT">
+            <HTMLLayout>
+            </HTMLLayout>
+        </Console>
+    </Appenders>
+</Configuration>

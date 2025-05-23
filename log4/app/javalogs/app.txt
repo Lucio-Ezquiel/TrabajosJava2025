@@ -2,3 +2,18 @@
 22:11:15.203 [main] WARN  org.milog.Milog - New file log msg
 09:49:34.774 [main] WARN  org.milog.Milog - New file log msg
 09:49:34.775 [main] FATAL org.milog.Milog - Http funca con python flask
+15:15:49.816 [main] WARN  org.milog.Milog - New file log msg
+15:24:16.396 [main] WARN  org.milog.Milog - New file log msg
+15:24:16.397 [main] FATAL org.milog.Milog - New file log msg
+15:27:10.157 [main] WARN  org.milog.Milog - New file log msg
+15:27:10.157 [main] FATAL org.milog.Milog - New file log msg
+15:27:29.418 [main] WARN  org.milog.Milog - New file log msg
+15:27:29.418 [main] FATAL org.milog.Milog - New file log msg
+17:04:15.354 [main] WARN  org.milog.Milog - New file log msg
+17:04:15.355 [main] FATAL org.milog.Milog - New file log msg
+17:05:09.658 [main] WARN  org.milog.Milog - New file log msg
+17:05:09.659 [main] FATAL org.milog.Milog - New file log msg
+17:07:49.437 [main] WARN  org.milog.Milog - New file log msg
+17:07:49.438 [main] FATAL org.milog.Milog - New file log msg
+17:28:45.100 [main] WARN  org.milog.Milog - New file log msg
+17:28:45.101 [main] FATAL org.milog.Milog - New file log msg
